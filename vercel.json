@@ -13,7 +13,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src https://canva.dhaker.site 'sha256-n1D9cZXw4ZNSiUR+6/8u4KC6Mx7KCFb9ScJA8U0UdhI=' 'sha256-sZHM2xe/enhd5U5YF1eTHxxOENdnvwB8wDQVOGWNJZY=' 'sha256-24Z2wwteZz6bojDTTgHX6qpOP8Y5OmFfVAjm03VlbYk=' 'sha256-7mu4H06fwDCjmnxxr/xNHyuQC6pLTHr4M2E4jXw5WZs=' 'sha256-QAlSewaQLi/NPCznjAZSyvQ72heD0VdxmNDDkZeCxgc=' 'sha256-p7GE78bbMHDrE4IWzpiMSttAsTpUu7wwi5/wvnH54Os=' 'sha256-duhaxWNI+6QAukUMmlYrkl97X+e0pxobkwS+TpY5/CQ=' 'sha256-ot4uWMULOgQERJVeW+1RS4LiQazeh9VYa+IzbwCX43U=' 'sha256-RBZNiG3Ztb26Xi/69+VRecU4BPhrfxcvspLXMRrrCNE=' 'sha256-D9S5KXsSSajKKVF3Jf+B22EHGKgFWMmaLff5rY6FNZc='; style-src 'self'; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: blob:; object-src 'none'; base-uri 'self'; connect-src 'self' https:; frame-ancestors 'none'; require-trusted-types-for 'script'; trusted-types default;"
+          "value": "default-src 'self'; script-src https://canva.dhaker.site 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: blob:; object-src 'none'; base-uri 'self'; connect-src 'self' https:; frame-ancestors 'none'; require-trusted-types-for 'script'; trusted-types default;"
         },
         {
           "key": "X-Frame-Options",
