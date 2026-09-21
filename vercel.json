@@ -24,6 +24,14 @@
           "value": "camera=(), microphone=(), geolocation=(), payment=()"
         },
         {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://canva.dhaker.site"
+        },
+        {
+          "key": "Access-Control-Allow-Credentials",
+          "value": "true"
+        },
+        {
           "key": "Strict-Transport-Security",
           "value": "max-age=63072000; includeSubDomains; preload"
         },
