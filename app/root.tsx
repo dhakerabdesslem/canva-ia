@@ -10,6 +10,12 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 
+export function headers() {
+  return {
+    "Content-Type": "text/html; charset=utf-8",
+  };
+}
+
 export const links: Route.LinksFunction = () => [
   { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
   { rel: "icon", href: "/icon.svg", type: "image/svg+xml" },
@@ -27,18 +33,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <link rel="manifest" href="/manifest.json" />
         <title>Masterclass Productivité & IA sur Canva — Dhaker Abdesslem</title>
         
-        {/* Preconnect & Async load Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&display=swap&text=!%22%23%24%25%26%27()*%2B%2C-.%2F0123456789%3A%3B%3C%3D%3E%3F%40ABCDEFGHIJKLMNOPQRSTUVWXYZ%5B%5C%5D%5E_%60abcdefghijklmnopqrstuvwxyz%7B%7C%7D%C2%A9%C2%AB%C2%B7%C2%BB%C3%80%C3%89%C3%A0%C3%A2%C3%A7%C3%A8%C3%A9%C3%AA%C3%AE%C3%B4%E2%80%94%E2%80%9C%E2%80%9D%E2%86%90%E2%86%92%E2%8F%B1%E2%9C%93%E2%9C%95%E2%9C%A6%F0%9F%8E%81%F0%9F%92%BC%EF%B8%8F" />
-        <noscript>
-          <style>{`
-            .reveal-on-scroll {
-              opacity: 1 !important;
-              transform: none !important;
-            }
-          `}</style>
-        </noscript>
+        <script src="/trusted-types.js"></script>
+        <link rel="stylesheet" href="/fonts.css" />
         <Meta />
         <Links />
       </head>
