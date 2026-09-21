@@ -1,0 +1,17 @@
+<svg viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="coffeeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3E63FF" />
+      <stop offset="50%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#FF7CC8" />
+    </linearGradient>
+  </defs>
+  <circle cx="130" cy="80" r="56" fill="rgba(124,58,237,0.12)" />
+  <path d="M105 60 H155 L148 104 H112 Z" fill="#1E293B" stroke="url(#coffeeGrad)" stroke-width="2.5" />
+  <path d="M152 68 C164 68 164 88 150 90" fill="none" stroke="#33D6FF" stroke-width="2.5" />
+  <path d="M120 52 C118 44 124 38 120 30" fill="none" stroke="#FF7CC8" stroke-width="2" stroke-linecap="round" />
+  <path d="M132 50 C130 42 136 36 132 28" fill="none" stroke="#33D6FF" stroke-width="2" stroke-linecap="round" />
+  <path d="M142 52 C140 46 145 40 142 32" fill="none" stroke="#FF7CC8" stroke-width="2" stroke-linecap="round" />
+  <rect x="80" y="112" width="100" height="20" rx="10" fill="url(#coffeeGrad)" />
+  <text x="130" y="126" text-anchor="middle" fill="#FFFFFF" font-size="9" font-weight="bold">PROMO -30% · TUNIS</text>
+</svg>
