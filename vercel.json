@@ -18,6 +18,10 @@
         {
           "key": "X-Powered-By",
           "value": ""
+        },
+        {
+          "key": "Server",
+          "value": "Web"
         }
       ]
     }
