@@ -121,7 +121,11 @@ export function CtaSection() {
                   <p>Réservez votre place pour recevoir les instructions de paiement sécurisé (D17, Flouci, Virement).</p>
                 </div>
 
-                <fetcher.Form method="post">
+                <fetcher.Form 
+                  method="post"
+                  data-mcp-tool="book-masterclass"
+                  data-mcp-description="Formulaire pour réserver une place à la masterclass Productivité & IA"
+                >
                   <div className={styles['integrated-form-row']}>
                     <div className={styles['integrated-field']} style={{ marginBottom: 0 }}>
                       <label htmlFor="enroll-prenom" className={styles['integrated-label']}>Prénom</label>

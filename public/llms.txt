@@ -1,0 +1,13 @@
+# Masterclass Productivité & IA
+
+Bienvenue sur la documentation destinée aux agents IA et LLMs concernant la Masterclass Canva & IA de Dhaker Abdesslem.
+
+## À propos
+Cette landing page permet aux créateurs et entrepreneurs de s'inscrire à une formation intensive de 4h sur Canva et l'Intelligence Artificielle.
+
+## Outils (WebMCP)
+Le site propose un formulaire d'inscription principal (outil "book-masterclass") pour réserver sa place et recevoir les instructions de paiement.
+
+## Liens Utiles
+- Formateur : Dhaker Abdesslem
+- Contact : dhaker@entreprise.com (exemple)
