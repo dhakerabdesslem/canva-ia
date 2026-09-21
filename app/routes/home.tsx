@@ -5,15 +5,18 @@ import { faqData } from "../data/content";
 import { Navigation } from "../components/sections/Navigation";
 import { HeroSection } from "../components/sections/HeroSection";
 
-import { CurriculumSection } from "../components/sections/CurriculumSection";
-import { WhySection } from "../components/sections/WhySection";
-import { InstructorSection } from "../components/sections/InstructorSection";
-import { StudentWorkSection } from "../components/sections/StudentWorkSection";
-import { TestimonialsSection } from "../components/sections/TestimonialsSection";
-import { MaterialsSection } from "../components/sections/MaterialsSection";
-import { FaqSection } from "../components/sections/FaqSection";
-import { CtaSection } from "../components/sections/CtaSection";
-import { Footer } from "../components/sections/Footer";
+import { lazy, Suspense } from "react";
+
+// Lazy loading below-the-fold content to drastically reduce initial JS and DOM size
+const LazyCurriculumSection = lazy(() => import("../components/sections/CurriculumSection").then(m => ({ default: m.CurriculumSection })));
+const LazyWhySection = lazy(() => import("../components/sections/WhySection").then(m => ({ default: m.WhySection })));
+const LazyInstructorSection = lazy(() => import("../components/sections/InstructorSection").then(m => ({ default: m.InstructorSection })));
+const LazyStudentWorkSection = lazy(() => import("../components/sections/StudentWorkSection").then(m => ({ default: m.StudentWorkSection })));
+const LazyTestimonialsSection = lazy(() => import("../components/sections/TestimonialsSection").then(m => ({ default: m.TestimonialsSection })));
+const LazyMaterialsSection = lazy(() => import("../components/sections/MaterialsSection").then(m => ({ default: m.MaterialsSection })));
+const LazyFaqSection = lazy(() => import("../components/sections/FaqSection").then(m => ({ default: m.FaqSection })));
+const LazyCtaSection = lazy(() => import("../components/sections/CtaSection").then(m => ({ default: m.CtaSection })));
+const LazyFooter = lazy(() => import("../components/sections/Footer").then(m => ({ default: m.Footer })));
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -133,16 +136,20 @@ export default function Home() {
       <main id="main-content">
         <HeroSection />
 
-        <CurriculumSection />
-        <WhySection />
-        <InstructorSection />
-        <StudentWorkSection />
-        <TestimonialsSection />
-        <MaterialsSection />
-        <FaqSection />
-        <CtaSection />
+        <Suspense fallback={<div style={{ minHeight: '100vh', padding: '100px 0', textAlign: 'center', color: '#94A3B8' }}>Chargement du contenu...</div>}>
+          <LazyCurriculumSection />
+          <LazyWhySection />
+          <LazyInstructorSection />
+          <LazyStudentWorkSection />
+          <LazyTestimonialsSection />
+          <LazyMaterialsSection />
+          <LazyFaqSection />
+          <LazyCtaSection />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={null}>
+        <LazyFooter />
+      </Suspense>
     </>
   );
 }
