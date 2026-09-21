@@ -67,13 +67,13 @@ export function MaterialsSection() {
               <BentoCard
                 isSmall
                 bonus
-                title={<h4 className={styles['bento-bonus-title']}>{materialsData.ai.title}</h4>}
+                title={<h3 className={styles['bento-bonus-title']}>{materialsData.ai.title}</h3>}
                 description={materialsData.ai.description}
               />
               <BentoCard
                 isSmall
                 bonus
-                title={<h4 className={styles['bento-bonus-title']}>{materialsData.texture.title}</h4>}
+                title={<h3 className={styles['bento-bonus-title']}>{materialsData.texture.title}</h3>}
                 description={materialsData.texture.description}
               />
             </div>

@@ -17,7 +17,7 @@ export function Footer() {
           </div>
           <div className={styles['foot-links']}>
             <div className={styles['foot-col']}>
-              <h5>Programme</h5>
+              <h3>Programme</h3>
               <a href="#curriculum">Les 5 Modules (4h)</a>
 
               <a href="#instructor">Votre Formateur</a>
@@ -26,7 +26,7 @@ export function Footer() {
               <a href="#enroll">Tarifs & Inscription</a>
             </div>
             <div className={styles['foot-col']}>
-              <h5>Contact & Infos</h5>
+              <h3>Contact & Infos</h3>
               <a href="#instructor">Dhaker Abdesslem (Formateur TOT)</a>
               <a href="#gallery">Livrables des élèves</a>
               <a href="#faq">Questions fréquentes</a>

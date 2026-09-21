@@ -58,7 +58,7 @@ export function CtaSection() {
               Canva & IA
             </div>
 
-            <h3>Masterclass Productivité & IA</h3>
+            <h2>Masterclass Productivité & IA</h2>
             
             <div className={styles['integrated-checkout-price-wrap']}>
               <div className={styles['integrated-checkout-price']}>120</div>
@@ -108,7 +108,7 @@ export function CtaSection() {
                 <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '64px', height: '64px', borderRadius: '50%', background: '#dcfce7', color: '#16a34a', marginBottom: '24px' }}>
                   <CheckCircle2 size={32} />
                 </div>
-                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#0f172a', marginBottom: '16px' }}>Réservation Validée !</h2>
+                <h3 style={{ fontSize: '24px', fontWeight: 800, color: '#0f172a', marginBottom: '16px' }}>Réservation Validée !</h3>
                 <p style={{ fontSize: '16px', color: '#64748b', lineHeight: 1.6, marginBottom: '32px' }}>
                   {fetcher.data?.message} <br/><br/>
                   Vérifiez votre boîte mail pour procéder au paiement final.
@@ -117,7 +117,7 @@ export function CtaSection() {
             ) : (
               <>
                 <div className={styles['integrated-form-header']}>
-                  <h4>Vos coordonnées</h4>
+                  <h3>Vos coordonnées</h3>
                   <p>Réservez votre place pour recevoir les instructions de paiement sécurisé (D17, Flouci, Virement).</p>
                 </div>
 
