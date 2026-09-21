@@ -139,7 +139,7 @@ export function CtaSection() {
 
                   <div className={styles['integrated-field']}>
                     <label htmlFor="enroll-email" className={styles['integrated-label']}>Email professionnel</label>
-                    <input type="email" id="enroll-email" name="email" required placeholder="john@entreprise.com" className={styles['integrated-input']} disabled={isSubmitting} />
+                    <input type="email" id="enroll-email" name="email" required placeholder="nom@example.com" className={styles['integrated-input']} disabled={isSubmitting} />
                   </div>
 
                   <div className={styles['integrated-field']}>
