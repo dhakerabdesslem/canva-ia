@@ -129,22 +129,22 @@ export function CtaSection() {
                   <div className={styles['integrated-form-row']}>
                     <div className={styles['integrated-field']} style={{ marginBottom: 0 }}>
                       <label htmlFor="enroll-prenom" className={styles['integrated-label']}>Prénom</label>
-                      <input type="text" id="enroll-prenom" name="prenom" required placeholder="John" className={styles['integrated-input']} disabled={isSubmitting} />
+                      <input type="text" id="enroll-prenom" name="prenom" autoComplete="given-name" required placeholder="John" className={styles['integrated-input']} disabled={isSubmitting} />
                     </div>
                     <div className={styles['integrated-field']} style={{ marginBottom: 0 }}>
                       <label htmlFor="enroll-nom" className={styles['integrated-label']}>Nom</label>
-                      <input type="text" id="enroll-nom" name="nom" required placeholder="Doe" className={styles['integrated-input']} disabled={isSubmitting} />
+                      <input type="text" id="enroll-nom" name="nom" autoComplete="family-name" required placeholder="Doe" className={styles['integrated-input']} disabled={isSubmitting} />
                     </div>
                   </div>
 
                   <div className={styles['integrated-field']}>
                     <label htmlFor="enroll-email" className={styles['integrated-label']}>Email professionnel</label>
-                    <input type="email" id="enroll-email" name="email" required placeholder="nom@example.com" className={styles['integrated-input']} disabled={isSubmitting} />
+                    <input type="email" id="enroll-email" name="email" autoComplete="email" required placeholder="nom@example.com" className={styles['integrated-input']} disabled={isSubmitting} />
                   </div>
 
                   <div className={styles['integrated-field']}>
                     <label htmlFor="enroll-numero" className={styles['integrated-label']}>Téléphone (WhatsApp)</label>
-                    <input type="tel" id="enroll-numero" name="numero" required placeholder="50 123 456" className={styles['integrated-input']} disabled={isSubmitting} />
+                    <input type="tel" id="enroll-numero" name="numero" autoComplete="tel" required placeholder="50 123 456" className={styles['integrated-input']} disabled={isSubmitting} />
                   </div>
 
                   {fetcher.data?.error && (

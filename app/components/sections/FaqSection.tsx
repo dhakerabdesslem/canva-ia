@@ -35,6 +35,9 @@ export function FaqSection() {
           </svg>
           <input
             type="search"
+            id="faq-search"
+            name="faqSearch"
+            autoComplete="off"
             placeholder="Rechercher une question (ex: D17, débutant, certificat, horaires)..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
