@@ -25,7 +25,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="theme-color" content="#05060F" />
         <link rel="canonical" href="https://canva.dhaker.site" />
         <link rel="manifest" href="/manifest.json" />
-        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <title>Masterclass Productivité & IA sur Canva — Dhaker Abdesslem</title>
         
         {/* Preconnect & Async load Google Fonts */}
