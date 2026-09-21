@@ -1,0 +1,25 @@
+{
+  "name": "Masterclass Productivité & IA sur Canva",
+  "short_name": "Canva & IA",
+  "description": "Masterclass 100% pratique animée par Dhaker Abdesslem : productivité d'agence et Studio Magique IA sur Canva.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#05060F",
+  "theme_color": "#05060F",
+  "categories": ["education", "design", "business"],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

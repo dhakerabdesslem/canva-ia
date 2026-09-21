@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060F"/>
+      <stop offset="100%" stop-color="#111633"/>
+    </linearGradient>
+    <linearGradient id="facetPwa1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#33D6FF"/>
+      <stop offset="50%" stop-color="#3E63FF"/>
+      <stop offset="100%" stop-color="#B07CFF"/>
+    </linearGradient>
+    <linearGradient id="facetPwa2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#5B7CFF" stop-opacity="0.3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#33D6FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#05060F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <circle cx="256" cy="256" r="180" fill="url(#glow)"/>
+  <polygon points="256,96 384,168 256,256 128,168" fill="url(#facetPwa2)"/>
+  <polygon points="128,168 256,256 256,400 128,312" fill="url(#facetPwa1)"/>
+  <polygon points="256,256 384,168 384,312 256,400" fill="#2948DB"/>
+  <polyline points="128,168 256,256 384,168" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.9"/>
+  <line x1="256" y1="256" x2="256" y2="400" stroke="#FFFFFF" stroke-width="3" opacity="0.7"/>
+  <circle cx="256" cy="96" r="8" fill="#33D6FF" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="384" cy="168" r="8" fill="#33D6FF" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="128" cy="168" r="8" fill="#33D6FF" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="256" cy="256" r="9" fill="#FFFFFF" stroke="#3E63FF" stroke-width="3"/>
+  <circle cx="256" cy="400" r="8" fill="#33D6FF" stroke="#FFFFFF" stroke-width="3"/>
+</svg>
